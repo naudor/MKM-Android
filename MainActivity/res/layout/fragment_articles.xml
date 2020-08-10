@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:BannerView="http://schemas.android.com/apk/lib/com.smaato.soma"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efebe7"
+    android:orientation="vertical" >
+    
+    <!--<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:id="@+id/articles_relative_layout">
+		<com.smaato.soma.BannerView
+			android:id="@+id/banner_shoppingcart_articles"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			BannerView:loadNewBanner="true" />
+		</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_ab_solid_dark_holo"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:showDividers="end"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80">
+
+            <TextView
+                android:id="@+id/textCardNameENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textExpansionNameArticles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/sell_price"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textSellPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:autoText="false"
+                    android:text="€"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textViewDetailUserNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/Average_price"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textAvgPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textViewDetailConditionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="€"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textDetailSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:text="@string/low_price"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textLowPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textGuio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="€"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:id="@+id/imageCard"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listArticles"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="#f1f1f1"
+        android:clickable="true"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/no_items_found"
+        android:id="@+id/textNoItemFoundArticles"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="invisible"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

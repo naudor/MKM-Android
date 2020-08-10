@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/textActorLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seller_label"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/textViewSellerValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="UserName"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imageCountrySeller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:minHeight="14dp"
+                            android:minWidth="14dp" />
+
+                        <ImageView
+                            android:id="@+id/imageReputationSeller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:minHeight="14dp"
+                            android:minWidth="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/textNumArticlesLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contents_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewNumArticle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/textViewBoughtDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bought_date_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewBoughtDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/textViewPaidDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paid_date_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewPaidDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/textViewSentDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/sent_date_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewSentDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewReceivedDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/received_date_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewArrivedDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewCancelledDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/called_date_label"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/textViewCancelledDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Small Text"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="5"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:src="@drawable/ic_action_next_item"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right|center_vertical" >
+
+            <TextView
+                android:id="@+id/textViewTotalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_label"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textViewTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FF8000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF8000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

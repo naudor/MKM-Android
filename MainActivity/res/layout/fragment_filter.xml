@@ -1,0 +1,657 @@
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:BannerView="http://schemas.android.com/apk/lib/com.smaato.soma"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#efebe7"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+    <!--<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" 
+		android:id="@+id/filter_relative_layout">
+		<com.smaato.soma.BannerView
+			android:id="@+id/banner_filter"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			BannerView:loadNewBanner="true" />
+		</RelativeLayout>-->
+
+     <ScrollView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="74dp"
+                        android:text="@string/condition_card"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterMint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/mt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterNM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterNM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/nm" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterEX"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterEX"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/ex" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterGD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterGD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/gd" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterLP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterLP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/lp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterPL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterPL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/pl" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterPO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterPO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/po" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewDetailConditionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="74dp"
+                        android:text="@string/language_card"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="15dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterEN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterEN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/anglaterra" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterFR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterFR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/francia" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterGR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterGR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/alemania" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterSP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterSP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/espanya" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterIT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterIT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/italia" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterCH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterCH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/xina" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterJP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterJP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/japo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterPT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterPT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/portugal" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterRU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterRU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/rusia" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterKO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterKO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/korea" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterCHT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterCHT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/xinot" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="74dp"
+                        android:text="@string/others"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="15dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterFoil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterFoil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/foil" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterAltered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterAltered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/altered" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterSigned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterSigned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/signed" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <CheckBox
+                            android:id="@+id/checkFilterPlayset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:id="@+id/imageFilterPlayset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="30dp"
+                            android:minWidth="20dp"
+                            android:src="@drawable/playset" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textGuio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="74dp"
+                    android:text="@string/minium_amount"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/textAmount"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/buttonFilter"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_orange"
+                    android:text="@string/filter"
+                    android:width="100dp" />
+
+                <Button
+                    android:id="@+id/buttonResetFilter"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_orange"
+                    android:text="@string/reset_filter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

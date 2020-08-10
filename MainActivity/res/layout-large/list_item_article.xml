@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="UserName"
+                android:id="@+id/textSellerName"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageCountrySeller"
+                android:minHeight="14dp"
+                android:minWidth="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageReputationSeller"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:minHeight="14dp"
+                android:minWidth="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageLanguageCard"
+                android:focusableInTouchMode="false"
+                android:minWidth="18dp"
+                android:minHeight="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageCondition"
+                android:layout_marginLeft="5dp"
+                android:minHeight="18dp"
+                android:minWidth="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageFirst"
+                android:layout_marginLeft="5dp"
+                android:minWidth="18dp"
+                android:minHeight="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageSecond"
+                android:layout_marginLeft="5dp"
+                android:minWidth="18dp"
+                android:minHeight="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageThird"
+                android:layout_marginLeft="5dp"
+                android:minWidth="18dp"
+                android:minHeight="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageFourth"
+                android:layout_marginLeft="5dp"
+                android:minWidth="18dp"
+                android:minHeight="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:layout_marginRight="5dp" >
+
+            <TextView
+                android:id="@+id/textCardPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:inputType="numberDecimal"
+                android:maxWidth="100dp"
+                android:numeric="decimal"
+                android:text="100.99"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/labelAvailable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/available"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:text="350"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

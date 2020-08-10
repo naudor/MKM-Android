@@ -1,0 +1,16 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.MKMAndroid.app.ArticlesActivity">
+
+<item android:id="@+id/action_filter"
+    android:icon="@drawable/ic_action_filter"
+    android:title="@string/filter"
+    app:showAsAction="ifRoom" />
+
+<item android:id="@+id/action_legend"
+    android:icon="@drawable/ic_action_help"
+    android:title="@string/legend"
+    app:showAsAction="ifRoom" />
+</menu>
